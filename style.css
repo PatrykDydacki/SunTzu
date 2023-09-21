@@ -1,0 +1,621 @@
+
+* {
+    margin: 0;
+    color: #03071E;
+    --clr-main: #03071E;
+    --clr-background: #9d0208;
+    
+    --fs-h3: 40px;
+    --fs-p: 24px;
+    --jd-p: 30px;
+    scroll-behavior: smooth;
+}
+
+.logo{
+    width: 75px;
+    height: 50px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.background{
+    background-color: var(--clr-background);
+}
+
+nav  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--clr-background);
+    align-items: center;
+}
+
+.przyciski {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 27px;
+} 
+
+.naglowek{
+    background-color: var(--clr-background);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 40px 0 30px 0;  
+}
+
+.formularz {
+    background-color: var(--clr-background);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 40px 0 30px 0; 
+}
+
+.formularz form p {
+    background-color: var(--clr-background);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    padding: 30px 0 0 0;
+}
+
+.formularz2 {
+    background-color: var(--clr-background);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 100px 0 0 0; 
+}
+
+.formularz2 p {
+    background-color: var(--clr-background);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: left;
+    padding: 0 0 30px 0; 
+}
+
+.input{
+    font-size: 24px;
+}
+
+.submit {
+    display: flex;
+    width:50px;
+    height: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.napisy {
+    max-width: 25%;
+    font-size: var(--fs-p);
+    line-height: var(--jd-p);
+}
+
+.ntytul {
+    max-width: 50%;
+    padding-bottom: 60px;
+    font-size: var(--fs-h3);
+}
+
+.ktytul-form {
+    max-width: 40%;
+    
+    padding: 20px 0 80px 0;
+    font-size: var(--fs-h3);
+}
+
+.ktytul-form2 {
+    max-width: 40%;
+    
+    padding: 100px 0 100px 0;
+    font-size: var(--fs-h3);
+}
+
+/* .ntytul < h3{
+    padding-top: 50px;
+} */
+
+main {
+    background-color: var(--clr-background);
+    background-image: url("mainbackground.jpg");
+    background-position: center;    /* Center the image */
+    background-repeat: no-repeat;   /* Do not repeat the image */
+    background-size: cover;         /* Resize the background image to cover the entire container */
+    color: var(--clr-main);
+    padding: 80px;
+    border-top: 2px solid var(--clr-main);
+}
+
+.backgroundimage{
+    background-image: url("mainbackground.jpg");
+    background-position: center;    /* Center the image */
+    background-repeat: no-repeat;   /* Do not repeat the image */
+    background-size: cover;         /* Resize the background image to cover the entire container */
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+
+.slider {
+    height: 300px;
+    width: 500px;
+}
+
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+  }
+  
+  #slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
+  }
+  
+  #slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    height: 300px;
+    background: #ccc;
+    text-align: center;
+    line-height: 300px;
+  }
+  
+  a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: #2a2a2a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  a.control_prev:hover, a.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+  }
+  
+  a.control_prev {
+    border-radius: 0 2px 2px 0;
+  }
+  
+  a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+  }
+  
+  .slider_option {
+    position: relative;
+    margin: 10px auto;
+    width: 160px;
+    font-size: 18px;
+  }
+  
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.marticle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px;
+}
+
+.mheader {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.marticle > h3 {
+    padding: 10px;
+    font-size: var(--fs-h3);
+}
+
+.marticle > p {
+    padding: 10px;
+    text-align: left;
+    font-size: var(--fs-p);
+    line-height: var(--jd-p);
+}
+
+.koniec {
+    display: flex;
+    border-top: 2px solid var(--clr-main);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
+    background-color: var(--clr-background);
+}
+
+.kzawartosc {
+    width: 30%;
+    padding: 20px 80px 20px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.kzawartosc > p {
+    font-size: var(--fs-p);
+    line-height: var(--jd-p);
+}
+
+.kzawartosc > h3 {
+    font-size: var(--fs-h3);
+    padding-bottom: 60px;
+}
+
+.portret{
+    border: solid 3px black;
+    border-radius: 15em;
+    box-shadow: 0px 0px 250px 50px black;
+}
+
+h1{
+    text-align: center;
+}
+
+.podstrony{
+    border: 2px solid var(--clr-main);
+    padding: 6px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+
+.podstrony:hover{
+    border: 2px solid var(--clr-main);
+    padding: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--clr-main);
+    color: var(--clr-background)
+}
+
+.czytdal{
+    color: darkblue;
+    text-decoration: none;
+}
+
+.footer{
+    color: white;
+}
+
+.cytat{
+    padding-bottom: 12px;
+}
+
+.cytatlast{
+    padding-bottom: 30px;
+}
+
+.stopka {
+    padding: 40px 0;
+    background-color: var(--clr-main);
+    color: white;
+    text-align: center;
+    font-size: var(--fs-h3);
+}
+
+
+
+
+
+
+
+@keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appearFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    80% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(0) scaleX(5);
+    }
+  }
+  
+  @keyframes appearFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    80% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(0) scaleX(5);
+    }
+  }
+  
+  .boxy{
+    display: flex;
+    background-color: var(--clr-background);
+  }
+
+  .box {
+    height: 0.25em;
+    background-color: var(--clr-main);
+    position: absolute;
+    margin: auto;
+    transition: background-color 1s 1s ease-in-out;
+  }
+  
+  .box--from-top {
+    width: 80px;
+    top: -640px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: appearFromTop 1s 0.25s both;
+  }
+  
+  .box--from-bottom {
+    width: 150px;
+    top: -820px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: appearFromBottom 1s 0.25s both;
+  }
+
+  .box--from-top-form {
+    width: 80px;
+    top: -605px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: appearFromTop 1s 0.25s both;
+  }
+  
+  .box--from-bottom-form {
+    width: 150px;
+    top: -775px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: appearFromBottom 1s 0.25s both;
+  }
+ 
+  .box--from-top-form2 {
+    width: 80px;
+    top: -200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: appearFromTop 1s 0.25s both;
+  }
+  
+  .box--from-bottom-form2 {
+    width: 150px;
+    top: -500px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: appearFromBottom 1s 0.25s both;
+  }
+  
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .koniec {
+        flex-direction: column;
+    } 
+      
+      .box--from-top {
+        display: none;
+
+      }
+      
+      .box--from-bottom {
+        display: none;
+
+      }
+    
+        
+      .box--from-top-form {
+        display: none;
+
+      }
+      
+      .box--from-bottom-form {
+        display: none;
+
+      }
+}
+
+@media screen and (max-width: 768px) { 
+    *{
+        padding: 0;
+    }
+
+
+    .box--from-top {
+        display: none;
+    }
+    
+    .box--from-bottom {
+        display: none;
+    }
+
+    .box--from-top-form {
+        display: none;
+    }
+    
+    .box--from-bottom-form {
+        display: none;
+    }
+
+
+    .podstrony{
+        font-size: 24px;
+    }
+
+    .ntytul{
+        padding-bottom: 30px;
+    }
+
+    main{
+        padding: 60px 30px 40px 30px;
+    }
+
+    .portret{
+        height: 400px;
+        width: 400px;
+    }
+
+    .main{
+        padding: 30px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .koniec{
+        padding: 30px 0px;
+    }
+
+    .napisy{
+        max-width: 50%;
+    }
+
+    .cytat, .text{
+        text-align: left;
+    }
+
+    .cytatlast{
+        text-align: left;
+        padding-bottom: 30px;
+    }
+
+    .kzawartosc{
+        padding: 20px 0 40px 0;
+        text-align: center;
+        width: 50%;
+    }
+
+    .kzawartosc > h3{
+        font-size: 60px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    *{
+        padding: 0;
+    }
+
+    .ntytul{
+        padding-bottom: 30px;
+    }
+
+    main{
+        padding: 60px 30px 40px 30px;
+    }
+
+    .portret{
+        height: 400px;
+        width: 400px;
+    }
+
+    .main{
+        padding: 30px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .koniec{
+        padding: 30px 0px;
+    }
+
+    .napisy{
+        max-width: 50%;
+    }
+
+    .cytat, .text{
+        text-align: left;
+    }
+
+    .cytatlast{
+        text-align: left;
+        padding-bottom: 30px;
+    }
+
+    .kzawartosc{
+        padding: 20px 0 40px 0;
+        text-align: center;
+        width: 50%;
+    }
+
+    .kzawartosc > h3{
+        font-size: 60px;
+        padding-bottom: 40px;
+    }
+}
+
+.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }
